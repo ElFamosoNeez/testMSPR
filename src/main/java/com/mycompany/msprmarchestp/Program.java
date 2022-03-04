@@ -159,10 +159,10 @@ try{
 "<html lang=\"en\" dir=\"ltr\">\n" +
 "  <head>\n" +
 "    <meta charset=\"utf-8\">\n" +
-"    <title></title>\n" +
+"    <title>Agent "+ agent.get(0) + " " + agent.get(1) +" </title>\n" +
 "  </head>\n" +
 "  <body>\n <center><h1>" +
-           "<h3>Identification : "+ agent.get(0) + " " + agent.get(1) + "</h3>\n"   + "Photo : \n" + "</br>" + "<img src="+Nom+".jpg"+ "></br>" + "poste de travail : " +  agent.get(2)  + "</br> mot de passe : "  + agent.get(3) + agent.get(4)+ "<ul>" + "<p><input type=" +"checkbox"+" checked >"+ agent.get(5)+ "</p>" + "<p><input type=" +"checkbox"+" checked >" 
+           "<h3>Identification : "+ agent.get(0) + " " + agent.get(1) + "</h3>\n"   + "Photo : \n" + "</br>" + "<img width="+"25%"+" src="+"IDs/"+Nom+".jpg"+ "></br>" + "poste de travail : " +  agent.get(2)  + "</br> mot de passe : "  + agent.get(3) + agent.get(4)+ "<ul>" + "<p><input type=" +"checkbox"+" checked >"+ agent.get(5)+ "</p>" + "<p><input type=" +"checkbox"+" checked >" 
            + agent.get(6) + "</p>" + "<p><input type=" +"checkbox"+" checked >" + agent.get(7) +  "</p>" + "<p><input type=" +"checkbox"+" checked >"+agent.get(8) + "</p>" +
 " </h1> </center>  \n" +
 "  </body>\n" +
