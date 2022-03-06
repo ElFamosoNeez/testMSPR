@@ -37,7 +37,7 @@ public class Program {
                 
                      bufWriter.write("<a href="+ ListeEquipement.get(i)+ ".html>" +ListeEquipement.get(i) +"</a>" +" ");
            
-                    bufWriter.write(ListeEquipement.get(i) + " </br></br>");
+                    bufWriter.write(" </br></br>");
                 
            
             
@@ -57,48 +57,7 @@ public class Program {
         }
     }
     
-    /*
-    
-    try{
-         // Le fichier d'entrée
-      FileInputStream file = new FileInputStream( nom+".txt");   
-      Scanner scanner = new Scanner(file);  
-      
-      //renvoie true s'il y a une autre ligne à lire
-       FileWriter myWriter = new FileWriter("test" + ".html");
-     
-                         try {
-     
-      myWriter.write("<!DOCTYPE html>\n" +
-"<html lang=\"en\" dir=\"ltr\">\n" +
-"  <head>\n" +
-"    <meta charset=\"utf-8\">\n" +
-"    <title></title>\n" +
-"  </head>\n" +
-"  <body>\n <center><h1>" +
-            nom+
-" </h1> </center>  \n" +
-"  </body>\n" +
-"</html>");
-      myWriter.close();
-    } 
-    catch (IOException e) {
-      System.out.println("An error occurred.");
-      e.printStackTrace();
-    }
-        
-        
-        
-      } catch (IOException e) {
-      System.out.println("An error occurred.");
-      e.printStackTrace();
-      }
-        
-        
-    }
-    
-    
-    */
+   
     
     //-----------------------------------------------------------------------------------------------------
     static void CreaHtml(String Nom){
@@ -112,11 +71,9 @@ public class Program {
 "    <meta charset=\"utf-8\">\n" +
 "    <title></title>\n" +
 "  </head>\n" +
-"  <body>\n <center><h1>" +
-             NomP +
-" </h1> </center>  \n" +
-"  </body>\n" +
-"</html>");
+"  <body>\n" +
+" <center> <h1>Fiche des Agents : </h1>\n" +
+"   <br><br>");
       myWriter.close();
     } 
     catch (IOException e) {
@@ -252,7 +209,7 @@ try{
         System.out.println("Hello");
      
         
-        CreaHtml("patrick");
+        CreaHtml("liste");
         HtmlList(personne);
        personne = LireFichier("staff");
        
